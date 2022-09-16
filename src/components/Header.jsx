@@ -4,12 +4,10 @@ function Header({text, bgColor, textColor,textAlign}) {
     const headerStyles = {
         backgroundColor: bgColor,
         color: textColor,
-        textAlign: textAlign
     }
   return (
     <header style={headerStyles}>
-        <div className="container" ></div>
-        <h1 style={{textAlign:'center'}}>{text}</h1>
+        <div className="container" ><h1>{text}</h1></div>
     </header>
   )
 }
@@ -17,8 +15,7 @@ function Header({text, bgColor, textColor,textAlign}) {
 Header.defaultProps = {
     text: 'Feedback UI',
     bgColor: 'rgba(0,0,0,0.4)',
-    textColor: '#ff6a95',
-    textAlign: 'center'
+    textColor: '#ff6a95'
 }
 
 Header.propTypes = {
